@@ -1,8 +1,9 @@
-'use client'
 import Image from "next/image"
-import { Helmet } from "react-helmet"
 import { Phone, Mail, MapPin, ArrowRight, Award, FileText, Users, Download, ExternalLink } from "lucide-react"
+import { generateOrganizationSchema, generateServicesSchema } from "./seo-utils"
+import Script from "next/script"
 
+// Add the structured data scripts at the beginning of the component
 export default function Home() {
   // Sample certification data
   const certifications = [
@@ -60,31 +61,35 @@ export default function Home() {
     },
   ]
 
+  // Generate structured data
+  const organizationSchema = generateOrganizationSchema()
+  const servicesSchema = generateServicesSchema()
+
   return (
     <div className="min-h-screen bg-white">
-      {/* SEO Optimization */}
-      <Helmet>
-        <title>
-          Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego | Eksperci w dziedzinie bezpieczeństwa pożarowego
-        </title>
-        <meta
-          name="description"
-          content="Profesjonalne usługi w zakresie inżynierii bezpieczeństwa pożarowego. Oferujemy symulacje CFD, rzeczoznawstwo, doradztwo i projektowanie systemów przeciwpożarowych."
-        />
-        <meta
-          name="keywords"
-          content="inżynieria bezpieczeństwa pożarowego, symulacje CFD, rzeczoznawstwo pożarowe, doradztwo pożarowe, projektowanie systemów przeciwpożarowych"
-        />
-        <meta name="author" content="Jerzy Łangowicz" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://langowicz.pl" />
-      </Helmet>
+      {/* Add JSON-LD structured data */}
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Script
+        id="services-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
 
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/logo.webp" alt="Jerzy Łangowicz Logo" width={60} height={60} className="mr-3" />
+            <Image
+              src="/logo.webp"
+              alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo"
+              width={60}
+              height={60}
+              className="mr-3"
+            />
             <h1 className="text-lg md:text-xl font-bold text-brand-blue">
               <span className="hidden md:inline">Jerzy Łangowicz - </span>
               <span className="text-sm md:text-lg font-medium block md:inline">
@@ -124,26 +129,56 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section - Redesigned with centered content and logo above text */}
       <section className="relative bg-gradient-to-r from-brand-blue to-brand-blue-light text-white py-20 md:py-32">
         <div className="absolute inset-0 opacity-10">
           <div className="w-full h-full bg-[url('/placeholder.svg?height=800&width=1600&text=Bezpieczeństwo+Pożarowe')] bg-cover bg-center"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center md:text-left md:mx-0">
-            <div className="hidden md:block absolute -top-10 right-0 md:right-10 lg:right-20 w-40 h-40 md:w-64 md:h-64">
-              <Image src="/logo.webp" alt="Jerzy Łangowicz Logo" fill className="object-contain" />
+          <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+            {/* Logo positioned above the text */}
+            <div className="w-40 h-40 md:w-64 md:h-64 relative mb-8 md:mb-10">
+              <Image
+                src="/logo.webp"
+                alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo firmowe"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
+
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Troszczymy się o Twoje bezpieczeństwo</h2>
-            <p className="text-xl md:text-2xl mb-8">DORADZTWO, PROJEKTOWANIE, OPINIOWANIE, RZECZOZNAWSTWO</p>
-            <a
-              href="#uslugi"
-              className="inline-flex items-center bg-brand-orange hover:bg-brand-orange-dark text-white font-bold py-3 px-6 rounded-lg transition-colors"
-            >
-              Nasze usługi
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            <p className="text-xl md:text-2xl mb-10">DORADZTWO, PROJEKTOWANIE, OPINIOWANIE, RZECZOZNAWSTWO</p>
+
+            {/* Buttons side by side */}
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+              <a
+                href="#uslugi"
+                className="inline-flex items-center justify-center bg-brand-orange hover:bg-brand-orange-dark text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-lg"
+              >
+                Nasze usługi
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a
+                href="#kontakt"
+                className="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-brand-blue font-bold py-3 px-6 rounded-lg transition-colors shadow-lg"
+              >
+                Skontaktuj się z nami
+                <Phone className="ml-2 h-5 w-5" />
+              </a>
+            </div>
           </div>
+        </div>
+
+        {/* Decorative wave at the bottom of the hero section */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 md:h-24 overflow-hidden">
+          <svg
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="absolute bottom-0 w-full h-full text-white fill-current"
+          >
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C0,0,0,0,0,0z"></path>
+          </svg>
         </div>
       </section>
 
@@ -170,7 +205,7 @@ export default function Home() {
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
                     src="/placeholder.svg?height=300&width=500&text=Symulacja+CFD"
-                    alt="Symulacja CFD"
+                    alt="Symulacja CFD - wizualizacja przepływu dymu w budynku"
                     fill
                     className="object-cover"
                   />
@@ -412,7 +447,7 @@ export default function Home() {
                 <div className="relative h-64 w-full">
                   <Image
                     src={cert.type === "pdf" ? cert.thumbnailUrl : cert.url}
-                    alt={cert.title}
+                    alt={`Certyfikat: ${cert.title} - ${cert.description}`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -479,7 +514,7 @@ export default function Home() {
                 <div className="relative h-64 w-full">
                   <Image
                     src={project.url || "/placeholder.svg"}
-                    alt={project.title}
+                    alt={`Projekt: ${project.title} - ${project.description}`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
