@@ -43,19 +43,19 @@ export default function Home() {
       id: 1,
       title: "Projekt systemu oddymiania",
       description: "Centrum handlowe w Poznaniu",
-      url: "/ibp/system.jpg",
+      url: "/ibp/system.webp",
     },
     {
       id: 2,
       title: "Symulacja CFD",
       description: "Budynek biurowy we Wrocławiu",
-      url: "/ibp/projekt.jpg",
+      url: "/ibp/projekt.webp",
     },
     {
       id: 3,
       title: "System gaszenia",
       description: "Zakład produkcyjny w Warszawie",
-      url: "/ibp/ro.jpg",
+      url: "/ibp/ro.webp",
     },
   ]
 
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/ibp/logo.png"
+              src="/ibp/logo.webp"
               alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo"
               width={60}
               height={60}
@@ -130,14 +130,14 @@ export default function Home() {
       {/* Hero Section - Redesigned with centered content and logo above text */}
       <section className="relative bg-gradient-to-r from-brand-blue to-brand-blue-light text-white py-20 md:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full bg-[url('/ibp/hero.jpg')] bg-cover bg-center"></div>
+          <div className="w-full h-full bg-[url('/ibp/hero.webp')] bg-cover bg-center"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             {/* Logo positioned above the text */}
             <div className="w-40 h-40 md:w-64 md:h-64 relative mb-8 md:mb-10">
               <Image
-                src="/ibp/logo.png"
+                src="/ibp/logo.webp"
                 alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo firmowe"
                 fill
                 className="object-contain"
@@ -202,7 +202,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/ibp/CFD.jpg"
+                    src="/ibp/CFD.webp"
                     alt="Symulacja CFD - wizualizacja przepływu dymu w budynku"
                     fill
                     className="object-cover"
@@ -224,7 +224,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/ibp/smoke.jpg"
+                    src="/ibp/smoke.webp"
                     alt="Rzeczoznawstwo"
                     fill
                     className="object-cover"
@@ -247,7 +247,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/ibp/consultant.jpg"
+                    src="/ibp/consultant.webp"
                     alt="Doradztwo"
                     fill
                     className="object-cover"
@@ -286,7 +286,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/ibp/engineering.jpg"
+                    src="/ibp/engineering.webp"
                     alt="Projektowanie"
                     fill
                     className="object-cover"
@@ -613,7 +613,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <Image src="/ibp/logo.png" alt="Jerzy Łangowicz Logo" width={50} height={50} className="mr-3" />
+              <Image src="/ibp/logo.webp" alt="Jerzy Łangowicz Logo" width={50} height={50} className="mr-3" />
               <p className="text-sm">
                 &copy; {new Date().getFullYear()} Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego. Wszelkie prawa
                 zastrzeżone.
