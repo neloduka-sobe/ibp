@@ -43,19 +43,19 @@ export default function Home() {
       id: 1,
       title: "Projekt systemu oddymiania",
       description: "Centrum handlowe w Poznaniu",
-      url: "/placeholder.svg?height=600&width=800&text=Projekt+1",
+      url: "system.jpg",
     },
     {
       id: 2,
       title: "Symulacja CFD",
       description: "Budynek biurowy we Wrocławiu",
-      url: "/placeholder.svg?height=600&width=800&text=Symulacja+CFD",
+      url: "projekt.jpg",
     },
     {
       id: 3,
       title: "System gaszenia",
       description: "Zakład produkcyjny w Warszawie",
-      url: "/placeholder.svg?height=600&width=800&text=System+Gaszenia",
+      url: "/ro.jpg",
     },
   ]
 
