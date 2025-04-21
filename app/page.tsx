@@ -12,30 +12,28 @@ export default function Home() {
       title: "Certyfikat SGSP",
       description: "Dyplom ukończenia Szkoły Głównej Służby Pożarniczej",
       type: "image",
-      url: "/placeholder.svg?height=400&width=300&text=Certyfikat+SGSP",
+      url: "/wyroznienie.webp",
     },
     {
       id: 2,
-      title: "Certyfikat CFD",
-      description: "Certyfikat ukończenia kursu symulacji CFD",
-      type: "pdf",
-      url: "#",
-      thumbnailUrl: "/placeholder.svg?height=400&width=300&text=Certyfikat+CFD",
+      title: "Certyfikat CNBOP - Systemy Sygnalizacji Pożaru",
+      description: "Certyfikat ukończenia kursu CNBOP - Systemy Sygnalizacji Pożaru",
+      type: "image",
+      url: "/CNBOP-SSP.webp",
     },
     {
       id: 3,
-      title: "Uprawnienia rzeczoznawcy",
-      description: "Uprawnienia rzeczoznawcy ds. zabezpieczeń przeciwpożarowych",
+      title: "Certyfikat CNBOP - Stałe Urządzenia Gaśnicze Gazowe",
+      description: "Certyfikat ukończenia kursu CNBOP - Stałe Urządzenia Gaśnicze Gazowe",
       type: "image",
-      url: "/placeholder.svg?height=400&width=300&text=Uprawnienia",
+      url: "/CNBOP-SUGG.webp",
     },
     {
       id: 4,
-      title: "Certyfikat producenta",
+      title: "Certyfikat producenta - Mercor",
       description: "Certyfikat autoryzowanego projektanta systemów przeciwpożarowych",
-      type: "pdf",
-      url: "#",
-      thumbnailUrl: "/placeholder.svg?height=400&width=300&text=Certyfikat+Producenta",
+      type: "image",
+      url: "/MCRwarsztaty.webp",
     },
   ]
 
@@ -131,8 +129,8 @@ export default function Home() {
 
       {/* Hero Section - Redesigned with centered content and logo above text */}
       <section className="relative bg-gradient-to-r from-brand-blue to-brand-blue-light text-white py-20 md:py-32">
-        <div className="absolute inset-0 opacity-10">
-          <div className="w-full h-full bg-[url('/placeholder.svg?height=800&width=1600&text=Bezpieczeństwo+Pożarowe')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-20">
+          <div className="w-full h-full bg-[url('/hero.jpg')] bg-cover bg-center"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
@@ -204,7 +202,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=500&text=Symulacja+CFD"
+                    src="/CFD.jpg"
                     alt="Symulacja CFD - wizualizacja przepływu dymu w budynku"
                     fill
                     className="object-cover"
@@ -226,7 +224,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=500&text=Rzeczoznawstwo"
+                    src="/smoke.jpg"
                     alt="Rzeczoznawstwo"
                     fill
                     className="object-cover"
@@ -249,7 +247,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=500&text=Doradztwo"
+                    src="/consultant.jpg"
                     alt="Doradztwo"
                     fill
                     className="object-cover"
@@ -288,7 +286,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=500&text=Projektowanie"
+                    src="/engineering.jpg"
                     alt="Projektowanie"
                     fill
                     className="object-cover"
@@ -335,7 +333,7 @@ export default function Home() {
               <div className="flex justify-center mt-6">
                 <div className="relative w-full h-64 bg-white rounded-lg shadow-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=300&text=Dyplom+SGSP"
+                    src="/dyplom.webp"
                     alt="Dyplom SGSP"
                     fill
                     className="object-contain p-4"
@@ -374,7 +372,7 @@ export default function Home() {
               <div className="flex justify-center mt-6">
                 <div className="relative w-full h-64 bg-white rounded-lg shadow-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=300&text=Certyfikat+Producenta"
+                    src="/smay-ewakuacja-2.webp"
                     alt="Certyfikat producenta"
                     fill
                     className="object-contain p-4"
@@ -414,7 +412,7 @@ export default function Home() {
               <div className="flex justify-center mt-6">
                 <div className="relative w-full h-64 bg-white rounded-lg shadow-md overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=300&text=Certyfikat+Konferencji"
+                    src="/kongres2017.webp"
                     alt="Certyfikat konferencji"
                     fill
                     className="object-contain p-4"
@@ -559,8 +557,8 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-brand-blue mr-2 flex-shrink-0" />
-                  <a href="tel:+48727339996" className="hover:text-brand-blue transition-colors">
-                    +48 727 339 996
+                  <a href="tel:+48727339999" className="hover:text-brand-blue transition-colors">
+                    +48 727 339 999
                   </a>
                 </div>
                 <div className="flex items-center">
