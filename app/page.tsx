@@ -202,7 +202,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/CFD.jpg"
+                    src="/ibp/CFD.jpg"
                     alt="Symulacja CFD - wizualizacja przepływu dymu w budynku"
                     fill
                     className="object-cover"
@@ -224,7 +224,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/smoke.jpg"
+                    src="/ibp/smoke.jpg"
                     alt="Rzeczoznawstwo"
                     fill
                     className="object-cover"
@@ -247,7 +247,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/consultant.jpg"
+                    src="/ibp/consultant.jpg"
                     alt="Doradztwo"
                     fill
                     className="object-cover"
@@ -286,7 +286,7 @@ export default function Home() {
                 </p>
                 <div className="mt-4 h-40 relative rounded-md overflow-hidden">
                   <Image
-                    src="/engineering.jpg"
+                    src="/ibp/engineering.jpg"
                     alt="Projektowanie"
                     fill
                     className="object-cover"
@@ -333,7 +333,7 @@ export default function Home() {
               <div className="flex justify-center mt-6">
                 <div className="relative w-full h-64 bg-white rounded-lg shadow-md overflow-hidden">
                   <Image
-                    src="/dyplom.webp"
+                    src="/ibp/dyplom.webp"
                     alt="Dyplom SGSP"
                     fill
                     className="object-contain p-4"
@@ -372,7 +372,7 @@ export default function Home() {
               <div className="flex justify-center mt-6">
                 <div className="relative w-full h-64 bg-white rounded-lg shadow-md overflow-hidden">
                   <Image
-                    src="/smay-ewakuacja-2.webp"
+                    src="/ibp/smay-ewakuacja-2.webp"
                     alt="Certyfikat producenta"
                     fill
                     className="object-contain p-4"
@@ -412,7 +412,7 @@ export default function Home() {
               <div className="flex justify-center mt-6">
                 <div className="relative w-full h-64 bg-white rounded-lg shadow-md overflow-hidden">
                   <Image
-                    src="/kongres2017.webp"
+                    src="/ibp/kongres2017.webp"
                     alt="Certyfikat konferencji"
                     fill
                     className="object-contain p-4"
