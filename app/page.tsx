@@ -43,13 +43,13 @@ export default function Home() {
       id: 1,
       title: "Projekt systemu oddymiania",
       description: "Centrum handlowe w Poznaniu",
-      url: "system.jpg",
+      url: "/system.jpg",
     },
     {
       id: 2,
       title: "Symulacja CFD",
       description: "Budynek biurowy we Wrocławiu",
-      url: "projekt.jpg",
+      url: "/projekt.jpg",
     },
     {
       id: 3,
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/logo.webp"
+              src="/logo.png"
               alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo"
               width={60}
               height={60}
@@ -137,7 +137,7 @@ export default function Home() {
             {/* Logo positioned above the text */}
             <div className="w-40 h-40 md:w-64 md:h-64 relative mb-8 md:mb-10">
               <Image
-                src="/logo.webp"
+                src="/logo.png"
                 alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo firmowe"
                 fill
                 className="object-contain"
@@ -444,16 +444,12 @@ export default function Home() {
               >
                 <div className="relative h-64 w-full">
                   <Image
-                    src={cert.type === "pdf" ? cert.thumbnailUrl : cert.url}
+                    src={cert.url}
                     alt={`Certyfikat: ${cert.title} - ${cert.description}`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  {cert.type === "pdf" && (
-                    <div className="absolute top-2 right-2 bg-brand-red text-white rounded-full p-1">
-                      <FileText className="h-5 w-5" />
-                    </div>
-                  )}
+
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold text-lg text-brand-blue">{cert.title}</h3>
@@ -617,7 +613,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <Image src="/logo.webp" alt="Jerzy Łangowicz Logo" width={50} height={50} className="mr-3" />
+              <Image src="/logo.png" alt="Jerzy Łangowicz Logo" width={50} height={50} className="mr-3" />
               <p className="text-sm">
                 &copy; {new Date().getFullYear()} Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego. Wszelkie prawa
                 zastrzeżone.
