@@ -12,28 +12,28 @@ export default function Home() {
       title: "Certyfikat SGSP",
       description: "Dyplom ukończenia Szkoły Głównej Służby Pożarniczej",
       type: "image",
-      url: "/wyroznienie.webp",
+      url: "/ibp/wyroznienie.webp",
     },
     {
       id: 2,
       title: "Certyfikat CNBOP - Systemy Sygnalizacji Pożaru",
       description: "Certyfikat ukończenia kursu CNBOP - Systemy Sygnalizacji Pożaru",
       type: "image",
-      url: "/CNBOP-SSP.webp",
+      url: "/ibp/CNBOP-SSP.webp",
     },
     {
       id: 3,
       title: "Certyfikat CNBOP - Stałe Urządzenia Gaśnicze Gazowe",
       description: "Certyfikat ukończenia kursu CNBOP - Stałe Urządzenia Gaśnicze Gazowe",
       type: "image",
-      url: "/CNBOP-SUGG.webp",
+      url: "/ibp/CNBOP-SUGG.webp",
     },
     {
       id: 4,
       title: "Certyfikat producenta - Mercor",
       description: "Certyfikat autoryzowanego projektanta systemów przeciwpożarowych",
       type: "image",
-      url: "/MCRwarsztaty.webp",
+      url: "/ibp/MCRwarsztaty.webp",
     },
   ]
 
@@ -43,19 +43,19 @@ export default function Home() {
       id: 1,
       title: "Projekt systemu oddymiania",
       description: "Centrum handlowe w Poznaniu",
-      url: "/system.jpg",
+      url: "/ibp/system.jpg",
     },
     {
       id: 2,
       title: "Symulacja CFD",
       description: "Budynek biurowy we Wrocławiu",
-      url: "/projekt.jpg",
+      url: "/ibp/projekt.jpg",
     },
     {
       id: 3,
       title: "System gaszenia",
       description: "Zakład produkcyjny w Warszawie",
-      url: "/ro.jpg",
+      url: "/ibp/ro.jpg",
     },
   ]
 
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/ibp/logo.png"
               alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo"
               width={60}
               height={60}
@@ -130,14 +130,14 @@ export default function Home() {
       {/* Hero Section - Redesigned with centered content and logo above text */}
       <section className="relative bg-gradient-to-r from-brand-blue to-brand-blue-light text-white py-20 md:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full bg-[url('/hero.jpg')] bg-cover bg-center"></div>
+          <div className="w-full h-full bg-[url('/ibp/hero.jpg')] bg-cover bg-center"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             {/* Logo positioned above the text */}
             <div className="w-40 h-40 md:w-64 md:h-64 relative mb-8 md:mb-10">
               <Image
-                src="/logo.png"
+                src="/ibp/logo.png"
                 alt="Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego - Logo firmowe"
                 fill
                 className="object-contain"
@@ -613,7 +613,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <Image src="/logo.png" alt="Jerzy Łangowicz Logo" width={50} height={50} className="mr-3" />
+              <Image src="/ibp/logo.png" alt="Jerzy Łangowicz Logo" width={50} height={50} className="mr-3" />
               <p className="text-sm">
                 &copy; {new Date().getFullYear()} Jerzy Łangowicz - Inżynieria Bezpieczeństwa Pożarowego. Wszelkie prawa
                 zastrzeżone.
